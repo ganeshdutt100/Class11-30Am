@@ -3,12 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zay website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+     <style>
+   .nav-one-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+   }
+
+   .email:hover{
+   cursor: pointer;
+   color: green;
+   font-family: sans-serif;
+   }
+
+   .left-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .right-flex{
+    display: flex;
+    gap: 20px;
+   }
+
+   .nav-two-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    color: #333;
+   }
+.list {
+    display: flex;
+    gap: 20px ;
+   /* text-decoration: none; */
+   list-style: none;
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+}
+
+.image img{
+    width: 500px;
+}
+.text1{
+    text-align: center;
+}
+
+.twitter:hover{
+    color: rgb(93, 93, 244);
+    cursor: pointer;
+}
+
+     </style>
 </head>
 <body>
-    <div class="para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, asperiores placeat blanditiis voluptates officia veritatis laboriosam labore quibusdam perspiciatis rerum minima accusamus, sapiente sequi accusantium recusandae, necessitatibus adipisci ipsum ipsam?
-    </div>
+    <nav class="nav-one-flex">
+
+        <div class="left-flex">
+
+            <div class="email">
+                <i class="fa fa-envelope"></i>
+                <span>info@company.com</span>
+            </div>
+            <div class="call">
+                <i class="fa fa-phone-alt"></i>
+                <span>010-020-0340</span>
+            </div>
+        </div>
+
+        <div class="right-flex">
+
+            <div class="twitter">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="facebook">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="instgram">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </div>
+    
+        </div>
+    </nav>
+    <nav class="nav-two-flex">
+        <div class="logo">
+            <h>Zay</h>
+            </p>
+        </div>
+        <ul class="list">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SHOP</a></li>
+        </ul>
+        </nav>
+        <div class="container">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/fashion-shoes_1203-7555.jpg?ga=GA1.2.1410359585.1728975612&semt=ais_hybrid">
+        </div>
+
+        <div class="text">
+              <h1>Zay eCommerce<br><span>Tiny and Perfect eCommerce Template</span><br></h1>
+                
+               <p class="par">Zay Shop is an eCommerce HTML5 CSS template with latest version <br>of Bootstrap 5 (beta 1). This template is 100% free provided by <br>TemplateMo website. Image credits go to Freepik Stories, <br>Unsplash and Icons 8.</p>
+              
+        </div>
+      
+        
+          </div>
+          <div class="text1">
+            <span >
+            <h1>Categories of The Month</h1>
+            <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+            </span>
+        </div>
 </body>
 </html>
