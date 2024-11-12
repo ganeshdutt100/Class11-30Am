@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 20px;
+      }
+      ul {
+        display: none;
+        gap: 20px;
+        list-style-type: none;
+      }
+      ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .heroSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .heroSection img {
+        width: 300px;
+        border-radius: 20px;
+      }
+      button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+      @media only screen and (min-width: 500px) {
+        nav {
+        }
+
+        .bar {
+          display: none;
+        }
+        ul {
+          display: flex;
+        }
+
+        .heroSection {
+          flex-direction: row;
+          gap: 20px;
+          text-align: start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p style="background-color: red">Lorem</p>
+
+    <span style="background-color: red"> Lorem </span> -->
+
+    <!-- <span></span> -->
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+      <div class="bar">⏸️</div>
+    </nav>
+
+    <div class="heroSection">
+      <img src="../Image/G.jpg" alt="" />
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quod
+          est inventore reiciendis doloremque eveniet deleniti ipsum labore
+          accusamus laboriosam ducimus, minus ipsam, unde mollitia perferendis
+          necessitatibus, voluptate iste libero.
+        </p>
+        <button>Click me</button>
+      </div>
+    </div>
+  </body>
+</html>
