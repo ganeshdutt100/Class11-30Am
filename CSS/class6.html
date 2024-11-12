@@ -26,12 +26,22 @@
         text-decoration: none;
       }
 
+      .section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+      }
+
       @media only screen and (min-width: 500px) {
         .icons {
           display: none;
         }
         ul {
           display: flex;
+        }
+        .section {
+          flex-direction: row;
+          gap: 20px;
         }
       }
     </style>
@@ -48,5 +58,17 @@
 
       <div class="icons">⏸️</div>
     </nav>
+
+    <div class="section">
+      <img src="../Image/boxModel.png" alt="" width="300px" />
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+          perspiciatis, facere veniam, tempore natus reiciendis magnam nisi ex
+          eveniet, quidem laboriosam commodi?
+        </p>
+      </div>
+    </div>
   </body>
 </html>
