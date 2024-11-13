@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        background-color: #333;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        width: 100%;
+        position: fixed;
+      }
+      .list {
+        display: none;
+        list-style-type: none;
+        gap: 20px;
+      }
+      .list li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* sec-1 */
+      .sec1 {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        padding-top: 100px;
+      }
+      .text {
+        flex: 1;
+      }
+      .text h1 {
+        font-size: 30px;
+      }
+      .text p {
+        font-size: 18px;
+      }
+      .sec1 img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+      @media only screen and (min-width: 500px) {
+        .sec1 {
+          padding: 100px 30px;
+        }
+        .sec1 img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          transition: all linear 0.5s;
+        }
+        .sec1 img:hover {
+          box-shadow: -5px 5px 8px #00000054;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .list {
+          display: flex;
+        }
+        .icons {
+          display: none;
+        }
+
+        .sec1 {
+          flex-direction: row;
+          gap: 20px;
+          text-align: start;
+        }
+        .text {
+          margin-top: 100px;
+          margin-left: 100px;
+        }
+        nav {
+          border-radius: 30px;
+          width: 95%;
+          margin-top: 4px;
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+      <ul class="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Services</a></li>
+        <li><a href="contact.html">Project</a></li>
+        <li><a href="contact.html">Blogs</a></li>
+      </ul>
+      <div class="icons"><i class="fa-solid fa-bars icons"></i></div>
+    </nav>
+
+    <!-- ========== Start Section-2 ========== -->
+    <div class="sec1">
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis et
+          voluptas nemo impedit rerum cum, ad pariatur odio fugit officiis, sed
+          soluta illum qui nihil vitae tempore dolorem quibusdam alias!
+        </p>
+      </div>
+      <img src="../Image/G.jpg" alt="" />
+    </div>
+    <!-- ========== End Section-2 ========== -->
+  </body>
+</html>
+
+<!-- win+alt+r -->
